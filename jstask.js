@@ -11,8 +11,6 @@ let books = [
     {id:103,name:" personC",isExistingCustomer:false} ];
     
 
-    //removing duplicates
-    function removeDuplicateBooks(books) {
         const uniqueBooks = Array.from(
             new Map(books.map((books) => [books.id, books])).values()
         );
@@ -70,6 +68,7 @@ return {
 
 const bill = prepareBill(selectedBooks, isExistingCustomer);
 console.log(bill);
+
 
 // update customer
 const customerId = 4;
