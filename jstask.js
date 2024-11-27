@@ -15,7 +15,7 @@ let books = [
             new Map(books.map((books) => [books.id, books])).values()
         );
         return uniqueBooks;
-    }
+    
     
     books = removeDuplicateBooks(books);
     console.log(books);
